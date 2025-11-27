@@ -273,4 +273,9 @@
   color: #ebe6f0;
   text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2;
 }
+.leaderboard-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
 
