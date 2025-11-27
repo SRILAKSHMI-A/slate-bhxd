@@ -559,8 +559,7 @@ function renderLeaderboard(entries) {
           <span class="col-rank">${index + 1}</span>
           <span class="col-name">${e.username}</span>
           <span class="col-score">${e.score}</span>
-          <span>${e.timeseconds}s</span>
-      `;
+          <span>${e.timeSeconds}s</span>`;
 
       list.appendChild(div);
   });
