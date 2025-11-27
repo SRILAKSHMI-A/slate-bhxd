@@ -186,19 +186,7 @@
   border-color: #932de6;
   box-shadow: 0 0 8px rgba(0, 234, 255, 0.4);
 }
-.catalyst-footer-badge {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 8px 14px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #00d5ff;
-  border: 1px solid rgba(0, 213, 255, 0.4);
-  backdrop-filter: blur(5px);
-}
+
 /* Container styling */
 #leaderboard {
   width: 400px;
@@ -276,6 +264,38 @@
 .leaderboard-item {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+/* remove link underline */
+.catalyst-link {
+  text-decoration: none;
+}
+
+/* badge style */
+.catalyst-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  
+  background: #fff;           /* fully white */
+  border-radius: 40px;
+
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+}
+
+/* hover effect (optional) */
+.catalyst-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.catalyst-icon {
+  height: 18px;
 }
 
 
