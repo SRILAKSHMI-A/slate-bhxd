@@ -543,25 +543,47 @@ async function loadLeaderboard() {
   }
 }
 
+// function renderLeaderboard(entries) {
+//   const list = document.getElementById("leaderboardList");
+//   list.innerHTML = "";
+
+//   entries.forEach((e, index) => {
+//       const div = document.createElement("div");
+//       div.classList.add("leaderboard-item");
+
+//       if (index === 0) div.classList.add("rank-1");
+//       if (index === 1) div.classList.add("rank-2");
+//       if (index === 2) div.classList.add("rank-3");
+
+//       div.innerHTML = `
+//           <span class="col-rank">${index + 1}</span>
+//           <span class="col-name">${e.username}</span>
+//           <span class="col-score">${e.score}</span>
+//           <span>${e.timeSeconds}s</span>`;
+
+//       list.appendChild(div);
+//   });
+// }
 function renderLeaderboard(entries) {
   const list = document.getElementById("leaderboardList");
   list.innerHTML = "";
 
   entries.forEach((e, index) => {
-      const div = document.createElement("div");
-      div.classList.add("leaderboard-item");
+      const li = document.createElement("li");
+      li.classList.add("leaderboard-item");
 
-      if (index === 0) div.classList.add("rank-1");
-      if (index === 1) div.classList.add("rank-2");
-      if (index === 2) div.classList.add("rank-3");
+      if (index === 0) li.classList.add("rank-1");
+      if (index === 1) li.classList.add("rank-2");
+      if (index === 2) li.classList.add("rank-3");
 
-      div.innerHTML = `
+      li.innerHTML = `
           <span class="col-rank">${index + 1}</span>
           <span class="col-name">${e.username}</span>
           <span class="col-score">${e.score}</span>
-          <span>${e.timeSeconds}s</span>`;
+          <span class="col-time">${e.timeSeconds}s</span>
+      `;
 
-      list.appendChild(div);
+      list.appendChild(li);
   });
 }
 
