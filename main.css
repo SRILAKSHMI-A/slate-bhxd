@@ -265,6 +265,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
 }
+.badge-wrapper {
+  display: flex;
+  justify-content: flex-end; /* RIGHT side */
+  width: 100%;
+}
+
 /* remove link underline */
 .catalyst-link {
   text-decoration: none;
