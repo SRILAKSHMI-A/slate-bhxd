@@ -69,7 +69,7 @@ const streamButtons = document.querySelectorAll('.stream-btn');
 const gridEl = document.getElementById('grid');
 const wordListEl = document.getElementById('wordList');
 const timerEl = document.getElementById('timer');
-const scoreEl = document.getElementById('score');
+// const scoreEl = document.getElementById('score');
 const backBtn = document.getElementById('backBtn');
 const currentStreamEl = document.getElementById('currentStream');
 const usernameEl = document.getElementById('username');
@@ -445,7 +445,7 @@ function markWordFound(word){
 
   // update score/time
   score += 100;
-  scoreEl.textContent = score;
+  // scoreEl.textContent = score;
 
   // if all found, finish game
   if(foundWords.size >= puzzleWords.length){
@@ -630,7 +630,7 @@ function startPuzzle(stream){
 
   foundWords = new Set();
   score = 0;
-  scoreEl.textContent = '0';
+  // scoreEl.textContent = '0';
 
   renderWordList(puzzleWords);
 
