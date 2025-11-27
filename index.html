@@ -1,101 +1,3 @@
-<!-- <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Quicky Puzzle — WordQuest</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <div class="container">
-    <header class="hero">
-      <img class="logo" src="/mnt/data/Screenshot 2025-11-24 at 2.48.27 PM.png" alt="logo" />
-      <h1>Quicky Puzzle</h1>
-      <p class="subtitle">Daily Developer Word Hunt</p>
-    </header>
-
-    <main>
-      <section id="choose-screen" class="panel active">
-        <h2>Choose Your Stream</h2>
-        <p class="muted">Select your area of expertise to start the puzzle</p>
-
-        <div class="streams">
-          <button class="stream-btn" data-stream="Backend">
-            <div class="icon backend">DB</div>
-            <div>
-              <div class="title">Backend</div>
-              <div class="muted">APIs, databases, servers</div>
-            </div>
-          </button>
-
-          <button class="stream-btn" data-stream="Frontend">
-            <div class="icon frontend">UI</div>
-            <div>
-              <div class="title">Frontend</div>
-              <div class="muted">UI/UX, frameworks</div>
-            </div>
-          </button>
-
-          <button class="stream-btn" data-stream="AI/ML">
-            <div class="icon ailm">AI</div>
-            <div>
-              <div class="title">AI/ML</div>
-              <div class="muted">Models & algorithms</div>
-            </div>
-          </button>
-
-          <button class="stream-btn" data-stream="Cloud">
-            <div class="icon cloud">☁</div>
-            <div>
-              <div class="title">Cloud</div>
-              <div class="muted">Infra, DevOps, scaling</div>
-            </div>
-          </button>
-        </div>
-      </section>
-
-      <section id="game-screen" class="panel">
-        <div class="topbar">
-          <button id="backBtn" class="link">← Back</button>
-          <div class="game-info">
-            <div>Stream: <span id="currentStream"></span></div>
-            <div>Time: <span id="timer">00:00</span></div>
-            <div>Score: <span id="score">0</span></div>
-            <div><input id="username" placeholder="Your name" /></div>
-          </div>
-        </div>
-
-        <div class="game-area">
-          <div class="grid-wrapper">
-            <div id="grid" class="grid"></div>
-            <div class="controls">
-              <button id="clearSelection">Clear</button>
-              <button id="checkSelection">Check</button>
-              <button id="submitBtn" class="primary hidden">Submit</button>
-            </div>
-          </div>
-
-          <aside class="sidebar">
-            <h3>Words to Find</h3>
-            <ul id="wordList" class="word-list"></ul>
-            <hr/>
-            <div id="leaderboard">
-              <h4>Leaderboard (demo)</h4>
-              <ol id="leaderboardList"></ol>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <button id="startBtn" class="primary">Choose Your Stream & Start Puzzle</button>
-    </footer>
-  </div>
-
-<script src="main.js"></script>
-</body>
-</html> -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -163,27 +65,24 @@
           </div>
           <div>
             <div class="title">General</div>
-            <div class="muted">HR, Marketing, Support, Sales, Finance, Content, QA, Everyone</div>
+            <div class="muted">HR, Marketing, Support, Sales, Everyone</div>
           </div>
         </button>
-       
+      <div id="leaderboard">
+          <h4 class="leaderboard-title">Leaderboard</h4>
         
-        
-     
-        
-      
-        <div class="leaderboard-container">
-    
-          <h2 class="lb-title">🏆 Leaderboard</h2>
-      
           <div class="leaderboard-header">
-              <span>Rank</span>
-              <span>Name</span>
-              <span>Score</span>
+            <span>Rank</span>
+            <span>Name</span>
+            <span>Score</span>
+            <span>Time</span>
           </div>
-      
-          <div id="leaderboardList" class="leaderboard-list"></div>
-      </div>
+        
+          <div class="leaderboard-scroll">
+            <ol id="leaderboardList" class="leaderboard-list"></ol>
+          </div>
+        </div>
+        
       
       
       </section>
